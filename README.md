@@ -1,8 +1,13 @@
-# MyAlbum
+# MyAlbum App
 
 ## Description
 
 MyAlbum allows users to seamlessly search for their favorite songs, albums, or artists and provide a rich and user-friendly experience.
+
+## API Overview
+
+The Search API is used in this app for querying content across various Apple Stores. Note that promotional content from the API is primarily for store content promotion. Usage terms and conditions apply.
+
 
 ## Features
 
