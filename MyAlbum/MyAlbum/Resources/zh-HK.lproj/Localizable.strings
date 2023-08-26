@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  MyAlbum
+
+  Created by Ronan Mak on 24/8/2023.
+  
+*/
+
+"searchPlaceholder" = "搜索藝術家、歌曲或專輯";
+"YourLibraryTitle" = "音樂庫";
+"SearchTitle" = "搜索";
+"SettingTitle" = "設置";
+"HomeTabTitle" = "設置";
+"SearchTabTitle" = "搜索";
+"LibraryTabTitle" = "音樂庫";
+
+"Country" = "國家";
+"All" = "全部";
+"Song" = "歌曲";
+
+"NoResultFound" = "沒有搜索結果";
+

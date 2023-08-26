@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  MyAlbum
+
+  Created by Ronan Mak on 24/8/2023.
+  
+*/
+
+"searchPlaceholder" = "Seach Artists, Songs or Albums";
+"YourLibraryTitle" = "Library";
+"SearchTitle" = "Search";
+"SettingTitle" = "Setting";
+"HomeTabTitle" = "Home";
+"SearchTabTitle" = "Search";
+"LibraryTabTitle" = "Library";
+
+"Country" = "Country";
+"All" = "All";
+"Song" = "Song";
+
+"NoResultFound" = "No Result found";
+
