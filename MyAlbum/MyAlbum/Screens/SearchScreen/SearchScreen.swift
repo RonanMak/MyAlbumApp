@@ -60,7 +60,10 @@ struct SearchScreen: View {
 
                     // Loading Indicator
                     if viewModel.showResultIndicator {
+                        viewModel.searchResults.count == 0 ?
                         Text("NoResultFound".localized(language))
+                            .padding(.vertical, 10) :
+                        Text("NoMoreResultsFound".localized(language))
                             .padding(.vertical, 10)
                     } else if viewModel.showLoadingIcon{
                         ActivityIndicator(isAnimating: true) {
