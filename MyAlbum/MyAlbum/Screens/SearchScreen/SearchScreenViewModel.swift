@@ -81,7 +81,7 @@ extension SearchScreenViewModel {
 
     func loadMore() {
         guard !isLoading, isLoadMore else { return }
-        self.fetchSearchResult()
+        fetchSearchResult()
     }
 
     func resetAlbumsData() {
@@ -93,7 +93,7 @@ extension SearchScreenViewModel {
     func resetAllOnNotificationChange() {
         resetAlbumsData()
         searchQuery = ""
-        selectedOption = .song
+        selectedOption = .all
         isLoading = false
     }
 
@@ -120,7 +120,7 @@ extension SearchScreenViewModel {
 
     func fetchSearchResult() {
         isTyping = false
-        self.isLoading = true
+        isLoading = true
 
         let request = updateSearchRequestModel()
 
@@ -156,7 +156,7 @@ extension SearchScreenViewModel {
             return MyAlbumEndpoints.iTunesAPIEndPoint.search(
                 SearchAllRequest(
                     searchQuery: query,
-                    limit: self.limit,
+                    limit: limit,
                     offset: offset
                 )
             )
@@ -164,7 +164,7 @@ extension SearchScreenViewModel {
             return MyAlbumEndpoints.iTunesAPIEndPoint.searchByCountry(
                 SearchRequest(
                     searchQuery: query,
-                    limit: self.limit,
+                    limit: limit,
                     offset: offset,
                     selectedOption: "country"
                 )
@@ -173,7 +173,7 @@ extension SearchScreenViewModel {
             return MyAlbumEndpoints.iTunesAPIEndPoint.searchBySong(
                 SearchRequest(
                     searchQuery: query,
-                    limit: self.limit,
+                    limit: limit,
                     offset: offset,
                     selectedOption: "song"
                 )
